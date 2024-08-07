@@ -1,0 +1,44 @@
+{
+	"layer": "top",
+	"position": "top",
+    "height": 27,
+    "modules-left": ["dwl/tags", "dwl/window"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio", "clock", "tray", "custom/shutdown"],
+	"dwl/tags": {
+        "format": "{name}",
+        "num-tags": 5,
+        "tag-labels": [
+            " ",  
+            " ",
+            " ",
+            " ",  
+            " "  
+        ]
+    },
+	"dwl/window": {
+    	"format": "{title}",
+    	"max-length": 150,
+      "icon": true
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 15
+    },
+    "clock": {
+        "format": "{:%a %b %e  %R}",
+        "interval": 30
+    },
+    "pulseaudio": {
+        "format": " {icon}   {volume}%  ",
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
+    },
+    "custom/shutdown": {
+      "format": "⏻ ",
+      "on-click": "wlogout"
+    }
+}
+

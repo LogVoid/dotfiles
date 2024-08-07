@@ -1,0 +1,54 @@
+* {
+    font-family: "UbuntuMono Nerd Font";
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: #1e2a38;
+    color: #e0e0e0;
+}
+
+.modules-left, .modules-right {
+    background-color: #2c3e50;
+}
+
+#tags button {
+    padding: 0px 15px; 
+    min-width: 10px;
+    color: #c0c0c0;
+    background-color: #34495e;
+}
+
+#tags button.focused {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+#window {
+    color: #e0e0e0;
+    background-color: #1e2a38;
+    padding: 0px 10px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    color: transparent;
+}
+
+window#waybar.empty {
+    background-color: #2c3e50;
+}
+
+#pulseaudio, #battery {
+    padding: 0px 15px;
+}
+
+#clock {
+    margin: 0px 15px;
+}
+
+#tray {
+    padding: 0px 8px 0px 5px;
+    margin: 0px 5px;
+}
+
